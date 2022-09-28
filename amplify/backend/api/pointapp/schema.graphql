@@ -1,0 +1,6 @@
+type PointAppDataModel @model @auth(rules: [{allow: public}]){
+  employeeNo: String! @primaryKey(sortKeyFields: ["sortKey"])
+  sortKey: String!
+  name: String
+  email: String
+}

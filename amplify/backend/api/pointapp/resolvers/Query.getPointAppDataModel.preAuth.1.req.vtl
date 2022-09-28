@@ -1,0 +1,7 @@
+## [Start] Set the primary key. **
+$util.qr($ctx.stash.metadata.put("modelObjectKey", {
+  "employeeNo": $util.dynamodb.toDynamoDB($ctx.args.employeeNo),
+  "sortKey": $util.dynamodb.toDynamoDB($ctx.args.sortKey)
+}))
+## [End] Set the primary key. **
+{}
